@@ -10,7 +10,7 @@ const transactionRouter = Router();
 transactionRouter.get('/', (request, response) => {
   try {
     // TODO
-  } catch (err) {
+  } catch (err: any) {
     return response.status(400).json({ error: err.message });
   }
 });
@@ -18,7 +18,7 @@ transactionRouter.get('/', (request, response) => {
 transactionRouter.post('/', (request, response) => {
   try {
     // TODO
-  } catch (err) {
+  } catch (err: any) {
     return response.status(400).json({ error: err.message });
   }
 });
